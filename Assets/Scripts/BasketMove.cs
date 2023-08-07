@@ -32,6 +32,11 @@ public class BasketMove : MonoBehaviour
     {
         count++;
         Debug.Log(count);
+
+        if (collision.collider.CompareTag("Item"))
+        {
+            speed += 0.5f;
+        }
     }
 
     public static int GetCount()
